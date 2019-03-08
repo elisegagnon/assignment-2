@@ -3,11 +3,12 @@
 
 A simple workflow for building static websites. Kit uses SCSS. Make sure that you have SCSS enabled in your editor.
 
-## Pre-requisits
-Before you can use Sass, you need to set it up on the web site root folder.
-- [SASS Basics](https://sass-lang.com/guide)
-- [VSCode Live Sass Plugin](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
-- [BrowserList](https://github.com/browserslist/browserslist)
+#GIT Basics
+1. Sign into Github Desktop 
+2. Create a New Repo
+3. set up our local directory Local (where you are)
+4. Placed the directory into the Github folder in the documents...
+5. Publish your repo (choose between private and public. Private is default uncheck)
 
 
 ## Features
