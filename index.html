@@ -1,18 +1,200 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SCSS Static Web Site Kit</title>
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-    <script src="js/index.js"></script>
-</body>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Portfolio Elise Gagnon</title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet" async>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" async>
+      <style>
+         body {
+         font-family: 'Open Sans', sans-serif;
+         margin: 0 auto;
+         line-height: 1.5;
+         color: #5D2E8C;
+         text-align: center;
+         }
+         p{
+         color: #999999;
+         max-width: 700px;
+         margin: 0 auto;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <nav class="mobile-nav">
+            <a href="#"><img id="mobile-settings-button" class="mobile-settings-button menu" src="img/bars-solid.svg" alt="menu-icon"></a>
+            <div class="large-menu">
+               <a class="hide" href="#">Home</a>
+               <a class="hide" href="#skills">Skills</a>
+               <a class="hide" href="#where-to-find">Where to Find Me</a>
+               <a class="hide" href="#work-exp">Work Experience</a>
+               <a class="hide" href="#education">Education</a>
+               <a class="hide" href="#contact-me">Get in touch</a>
+            </div>
+            <ul class="contact-info">
+               <li>elisegagnon9@gmail.com</li>
+               <li>(780) 915 3316</li>
+            </ul>
+         </nav>
+         <aside id="mobile-settings-menu" class="mobile-settings-menu hidden">
+            <ul class="mobile-links">
+               <li><a href="#skills">Skills Summary</a></li>
+               <li><a href="#where-to-find">Where to Find Me</a></li>
+               <li><a href="#work-exp">Work Experience</a></li>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#contact-me">Get in Touch</a></li>
+            </ul>
+         </aside>
+         <div class="who-dis">
+            <img  class="pic-me" src="img/me.png" alt="elise">
+            <h1>Elise Gagnon</h1>
+            <p>Front End Web Development | UI/UX Design</p>
+            <div class="buttons">
+               <a  class="new-proj-button" href="#">New Projects</a>
+               <a class="awards-button" href="#">Awards</a>
+            </div>
+            <a class="netlify" href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/>
+            </a>
+         </div>
+      </header>
+      <section id="skills" class="skills-section">
+         <h2>Skills Summary</h2>
+         <div class="skills-percentages">
+            <div class="skill-descrip">
+               <h3 class="hide-me">Relationship Building</h3>
+               <img class="skills" src="img/percentages-95.svg" alt="95-relationship-building">
+               <p class="hide-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quisquam, eum amet vel est optio vitae, ratione obcaecati ducimus libero facilis veniam iste nulla repellat? Ipsa minima sint vitae nam?</p>
+            </div>
+            <div class="skill-descrip">
+               <h3 class="hide-me"> Marketing</h3>
+               <img class="skills" src="img/percentages-90.svg" alt="90-marketing">
+               <p class="hide-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quisquam, eum amet vel est optio vitae, ratione obcaecati ducimus libero facilis veniam iste nulla repellat? Ipsa minima sint vitae nam?</p>
+            </div>
+            <div class="skill-descrip">
+               <h3 class="hide-me">UI/UX</h3>
+               <img class="skills" src="img/percentages-85.svg" alt="85-ui-ux">
+               <p class="hide-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quisquam, eum amet vel est optio vitae, ratione obcaecati ducimus libero facilis veniam iste nulla repellat? Ipsa minima sint vitae nam?</p>
+            </div>
+            <div class="skill-descrip">
+               <h3 class="hide-me">Web Development</h3>
+               <img class="skills" src="img/percentages-75.svg" alt="75-web-dev">
+               <p class="hide-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quisquam, eum amet vel est optio vitae, ratione obcaecati ducimus libero facilis veniam iste nulla repellat? Ipsa minima sint vitae nam?</p>
+            </div>
+         </div>
+      </section>
+      <section id="where-to-find" class="where-to-find-me">
+         <h2>Where to Find Me</h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet quae perferendis adipisci, aliquid consectetur autem odit saepe modi rem illo voluptatem voluptatum, nam officia quod odio veniam harum tempora excepturi.</p>
+         <div class="where-to-find">
+            <a href="#"><img class="github" src="img/github-brands.svg" alt="github-icon"></a>
+            <a href="#"><img src="img/dribbble-brands.svg" alt="dribbble-icon"></a>
+            <a href="#"> <img  class="linked-in" src="img/linkedin-in-brands.svg" alt="linkedin-icon"></a>
+            <a href="#"> <img class="insta" src="img/instagram-brands.svg" alt="instagram-icon"></a>
+            <A href="#"><img class="g-plus" src="img/google-plus-g-brands.svg" alt="googleplus-icon"></A>
+         </div>
+      </section>
+      <section id="work-exp">
+         <h2>Work Experience</h2>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quaerat tempore natus asperiores hic? Odit excepturi blanditiis et quia natus molestias quisquam enim reprehenderit, rerum voluptas, nisi quasi est dolor.</p>
+         <div class="jobs-held">
+            <div class="job edge">
+               <h3>Bartender/Server</h3>
+               <p class="place-worked">Cafe Blackbird</p>
+               <p class="time-held">October 2018 - Present</p>
+               <ul class="job-descrip">
+                  <li>Oversee guest lists for music performances</li>
+                  <li>Provide quality experience to build a loyal clientele</li>
+                  <li>Strong time management skills within restrictive timelines</li>
+               </ul>
+            </div>
+            <div class="job">
+               <h3>Station Service Attendant</h3>
+               <p class="place-worked">Via Rail Canada</p>
+               <p class="time-held">March 2018 - October 2018</p>
+               <ul class="job-descrip">
+                  <li>Design unique and creative solutions for passengers in instances of delays</li>
+                  <li>Complete administrative documentaiton for off-duty management</li>
+                  <li>Dissolve situations at risk of escalating into harmful situations</li>
+               </ul>
+            </div>
+            <div class="job edge">
+               <h3>Barista/Server</h3>
+               <p class="place-worked">District Cafe & Bakery</p>
+               <p class="time-held">August 2016 - March 2018</p>
+               <ul class="job-descrip">
+                  <li>Educate customers about coffee products and cafe events</li>
+                  <li>Maintain cafe cleanliness in peak and off times</li>
+                  <li>Ensure appropriate stock of merchandise, coffee products and supplies</li>
+               </ul>
+            </div>
+            <div class="job">
+               <h3>Leasing & Development Intern</h3>
+               <p class="place-worked">Brentwood Developments</p>
+               <p class="time-held">April 2015 - October 2015</p>
+               <ul class="job-descrip">
+                  <li>Review incomming contracts for further negotioation</li>
+                  <li>Update website and brochure content</li>
+                  <li>Act as an inter-department liaison for projects and ongoing contracts</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section id="education">
+         <h2>Education</h2>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At cupiditate minus et doloremque libero animi architecto, enim laboriosam consequuntur dolorum repellendus ullam molestias quos illum quis necessitatibus quisquam molestiae officia?
+         </p>
+         <div class="education-summary">
+            <div class="edu edge">
+               <h3 class="certif-received">Diploma in Web Design & Development</h3>
+               <p class="school-time">SEPT 2018 - CURRENT</p>
+               <p class="school">NAIT</p>
+            </div>
+            <div class="edu">
+               <h3 class="certif-received">Google AdWords & Google Analytics</h3>
+               <p class="school-time">Received December 2018</p>
+               <p class="school">Google Academy</p>
+            </div>
+            <div class="edu edge">
+               <h3 class="certif-received">Bachelor of Commerce</h3>
+               <p class="school-time">Received June 2016</p>
+               <p class="school">University of Alberta</p>
+            </div>
+            <div class="edu">
+               <h3 class="certif-received">High School Diploma</h3>
+               <p class="school-time">Received June 2012</p>
+               <p class="school">Westwood Community Highschool</p>
+            </div>
+         </div>
+      </section>
+      <section id="contact-me" class="form-contact">
+         <h2>Get in Touch</h2>
+         <form action="#">
+            Name:
+            <input type="text" name="name" >
+            Email:
+            <input type="text" name="lastname">
+            Message:
+            <input type="text" name="firstname">
+            <input class="submit-button" type="submit" value="Get in Touch">
+         </form>
+      </section>
+      <footer>
+         <div>
+            <div>
+               <p>Copyright Elise Gagnon @2019, all rights reserved</p>
+               <p>elisegagnon9@gmail.com</p>
+               <p>(780) 915 3316</p>
+            </div>
+         </div>
+      </footer>
+      <script src="js/menu/menu.js"></script>
+   </body>
 </html>

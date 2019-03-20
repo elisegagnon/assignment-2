@@ -1,0 +1,322 @@
+
+header, section {
+  padding: 16px;
+}
+
+.menu{
+    width: 40px;
+    height: 40px;
+}
+h1, h2 { 
+    font-family: 'Patua One', cursive; 
+}
+
+h1 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 31px; 
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-settings-menu {
+    position:fixed;
+    top:10vh;
+    background:#fff;
+    width: 15rem;
+    box-shadow:  0 0 5px 0 rgb(192, 192, 192);
+    padding: 10px;
+    text-align: left;
+    color: #125137;
+
+   }
+.hide{
+    display: none;
+}
+   .mobile-links{
+    list-style: none;
+   }
+
+   .mobile-links a:link, .mobile-links a:visited{
+       color: #ff6666;
+   }
+  
+
+header {
+ background: #ff6666;
+ color: #ffffff;
+}
+
+.who-dis{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.who-dis p{
+    color: #ffffff;
+}
+
+.pic-me{
+    width: 150px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-proj-button, .awards-button{
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+}
+
+.new-proj-button{
+    background: #CCFF66;
+    margin: 45px 0 15px 0;
+}
+
+.awards-button{
+    background:#5D2E8C;
+}
+
+a:link, a:visited {
+    font-family: 'Patua One', cursive;
+    color: #ffffff;
+}
+
+section{
+    margin-top: 80px;
+}
+
+.where-to-find{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.where-to-find img{
+    width: 75px;
+    margin-right: 50px;
+}
+
+.where-to-find .linked-in{
+    margin-right: 0;
+}
+
+.where-to-find .g-plus{
+    width: 95px;
+}
+
+.where-to-find .insta{
+    margin-left: 60px;
+}
+
+.hide-me{
+    display: none;
+}
+
+.job:first-of-type, .edu:first-of-type{
+ margin-top: 65px;
+}
+
+.job{
+    border: 3px solid #CCFF66;
+}
+
+.edu{
+    border: 3px solid #2DC4B6;
+}
+.job, .edu{
+    margin-bottom: 25px;
+    padding: 25px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.job-descrip{
+    font-size: 12px;
+    color:#999999;
+    list-style: none;
+}
+
+.place-worked, .school{
+    color: #ff6666;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.time-held, .school-time{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #ff6666;
+    margin-bottom: 0;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    max-width: 450px;
+}
+
+input{
+    border: 1px solid #2DC4B6;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.submit-button{
+    border: none;
+    margin-top: 40px;
+    background: #ff6666;
+    color: #ffffff;
+    width: 295px;
+    align-self: center;
+}
+
+@media (min-width: 760px){
+
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .new-proj-button{
+        margin: 0 15px 0 0;
+    }
+
+    .skills-percentages{
+        display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+    }
+
+    .skill-descrip{
+        width: 250px;
+        margin-top: 25px;
+    }
+    .skill-descrip h3{
+        font-size: 22px;
+
+    }
+
+    .hide-me{
+        display: contents;
+    }
+   
+
+    .where-to-find-me{
+        background: #5D2E8C;
+        color:#ffffff;
+    }
+
+    .where-to-find{
+        margin: 65px 0 70px 0;;
+    }
+
+    .where-to-find-me p{
+        color: #ffffff;
+    }
+
+    .where-to-find img {
+        margin: 0;
+    }
+
+    .where-to-find .insta{
+        margin: 0;
+    }
+
+    .jobs-held, .education-summary{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jobs-held div, .education-summary div{
+        width: 60%;
+    }
+
+    .edge{
+        align-self: flex-end;
+    }
+
+
+}
+
+@media (min-width: 1200px){
+
+    .hide{
+        display: contents;
+    }
+
+    .large-menu a{
+       margin-right: 30px; 
+       display: inline-block;
+       
+    }
+
+    .menu{
+        display: none;
+    }
+    .skills-percentages img{
+        width: 25%;
+    }
+
+    .skill-descrip{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .jobs-held, .education-summary{
+        flex-direction: row-reverse;
+        margin: 0;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+
+    .jobs-held div{
+        height: 190px;
+    }
+
+    .education-summary div{
+        height: 120px;
+    }
+    .jobs-held div, .education-summary div{
+        width: 23%;
+        padding: 15px;
+    }
+
+    .job:first-of-type, .edu:first-of-type{
+        margin-top: 0;
+    }
+    .jobs-held .edge{
+        padding-bottom: 50px;
+    }
+}
+
+.netlify img{
+    width: 125px;
+    margin-top: 20px;
+}
